@@ -1,0 +1,26 @@
+[
+  {
+    "id": "trc",
+    "slug": "diary-trc",
+    "title": "TRC 日记",
+    "sourceMatch": "TRC日记",
+    "cover": "/media/learning.svg",
+    "topics": [
+      "价值影响力"
+    ],
+    "updatedAt": "2026-10-24T17:51:09.861375+00:00"
+  },
+  {
+    "id": "xifeng",
+    "slug": "diary-xifeng",
+    "title": "西风日记",
+    "sourceMatch": "西风日记",
+    "cover": "/media/research.svg",
+    "topics": [
+      "赚钱能力",
+      "选择战略",
+      "价值影响力"
+    ],
+    "updatedAt": "2026-10-24T17:51:09.861375+00:00"
+  }
+]

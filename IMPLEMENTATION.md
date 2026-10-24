@@ -59,3 +59,15 @@ The user's later instruction explicitly authorizes all past annual originals and
 - Production build succeeded: 41 static routes, 20 content items, 31 sitemap pages; logical output 550.3 MiB. Actual 2025 original page was opened with 1,011 image elements and per-source links. No tests added or run.
 
 Deployment status for this extension is recorded in the parent version project.md after Actions completes.
+
+## Diary continuation correction — 2026-10-25
+
+User supplied the exact insertion point: new dates follow the main diary's 10/19–20 ancher entry in its current phase, in both body and directory. The `今天的记录` heading becomes `ziye：` for current and future website diary entries.
+
+The shared annual loader now inserts website records by date into the primary diary source (the source with the most dated records), using the closest preceding source entry to select the phase. Original source order, HTML and all permanent entry IDs remain intact. Both the article and archive directory consume this same view. Raw storage stays separated so re-import cannot discard website entries. Years without dated source records use a neutral 日记 section. This is a small, user-directed correction; no new service or data migration is needed.
+
+User then requested independent TRC and 西风 pages. Public diary views partition those source stages from annual diaries, preserve their IDs and images, and expose `/content/diary-trc/` and `/content/diary-xifeng/` with dedicated directories. Archive search/modal links use content slugs rather than years; legacy moved annual hashes redirect to the independent page. The diary CLI supports series-specific same-day aggregation, retained by source refresh. Raw annual files remain source-storage containers only.
+
+New website headings automatically follow `DayN YYYY.M.D topic` (or the provided real date range), continuing the main source numbering without changing imported titles. Same-day supplementation shares the original date's number; backfills are placed by date. The user's few-shot leads to Day229/230/231 for 10/21, 10/22, 10/25. The ziye： fact heading is also persisted as a future authoring rule.
+
+Final production build passed: 43 static routes, 22 content items, 33 sitemap pages. Generated article inspection: annual 2026 has 223 entries / 1,039 images / only the main diary source; TRC has 1 entry; 西风 has 1 entry / 28 images. Main phase tail is 10/19–20 → Day229 10/21 → Day230 10/22 → Day231 10/25; current fact heading is ziye：. Independent read-only review found no material defects in continuation, series partition, slug-based directories, legacy hashes, CLI same-day targeting or title numbering. No tests added or run. Deployment receipt is recorded in parent project.md.
