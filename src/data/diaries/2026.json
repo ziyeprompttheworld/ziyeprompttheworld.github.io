@@ -1,8 +1,8 @@
 {
   "year": 2026,
   "updated": "2026-10-25",
-  "updatedAt": "2026-10-24T17:24:02.877405+00:00",
-  "lastRecordDate": "2026-10-19",
+  "updatedAt": "2026-10-24T17:27:32.272137+00:00",
+  "lastRecordDate": "2026-10-22",
   "original": true,
   "notice": "年度日记原文归档：保留原有文字、标题、段落与图片。跨年记录保留原日期范围；音视频及其他附件保留飞书原文入口。",
   "sources": [
@@ -1855,6 +1855,41 @@
           "title": "原文正文",
           "html": "<p></p><figure><img src=\"/diary-media/diary-img-b22d139e2a509d41.webp\" width=\"1502\" height=\"804\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-c25d3286d1880576.webp\" width=\"1416\" height=\"894\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-8cf5fa4050837ea8.webp\" width=\"1412\" height=\"1700\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-9d944fc9a8c57ac1.webp\" width=\"1436\" height=\"706\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-47e1558079a3e065.webp\" width=\"1458\" height=\"260\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-273c732d571aa834.webp\" width=\"1394\" height=\"356\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-dbb707f838faff50.webp\" width=\"1382\" height=\"354\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-a4500d9e0c278b9c.webp\" width=\"1414\" height=\"774\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-81fd94381d10864d.webp\" width=\"1546\" height=\"942\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-1e4ec0d56e52f142.webp\" width=\"1800\" height=\"971\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-8d830cca1406b506.webp\" width=\"1800\" height=\"1624\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-59ee131c12fb3033.webp\" width=\"1800\" height=\"1777\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-fa244c46f90d7885.webp\" width=\"1800\" height=\"1000\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-bab8784edd255c3d.webp\" width=\"1800\" height=\"1655\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-bf00b923986d92df.webp\" width=\"1800\" height=\"1644\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-55a79cdd3aea8007.webp\" width=\"1800\" height=\"1739\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-9d90ab1134e860cc.webp\" width=\"1800\" height=\"1640\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-9e5b3a1e16f86187.webp\" width=\"1800\" height=\"1351\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-92b84dd7040377ea.webp\" width=\"1800\" height=\"1629\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-63d06947d885ee3d.webp\" width=\"1800\" height=\"1776\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-94571c4838bb76d3.webp\" width=\"1800\" height=\"1640\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-291f10b202ca07fb.webp\" width=\"1800\" height=\"1638\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-ade9d5d3a43a6d6f.webp\" width=\"1800\" height=\"1637\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-212987ea2dfde192.webp\" width=\"1800\" height=\"1649\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-5368c6c2f4d217fd.webp\" width=\"1800\" height=\"1428\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-565d658a8095b887.webp\" width=\"1800\" height=\"857\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-5ca0d533921a2563.webp\" width=\"1766\" height=\"684\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure><figure><img src=\"/diary-media/diary-img-703c6722f8eedd14.webp\" width=\"1776\" height=\"840\" loading=\"lazy\" decoding=\"async\" alt=\"日记原文配图\"/></figure>",
           "topics": [],
+          "originalHeading": false
+        }
+      ]
+    },
+    {
+      "id": "website-additions",
+      "title": "网站补充记录（既有公开稿）",
+      "sourceTitle": "网站既有公开稿 · 经整理，非飞书原文",
+      "entries": [
+        {
+          "id": "d-2026-10-21",
+          "date": "2026-10-21",
+          "title": "立下目标，把产品推向上线",
+          "html": "<p>生财日记记录了两个主题：立下目标看板，先把产品挂上；用原子习惯持续行动，把产品推向上线。</p><p>视频的两期保留各自的期数，在年度日记里归入同一天。</p>",
+          "topics": [
+            "赚钱能力",
+            "选择战略"
+          ],
+          "origin": "website",
+          "originalHeading": false
+        },
+        {
+          "id": "d-2026-10-22",
+          "date": "2026-10-22",
+          "title": "用精要主义做选择，先从 MCP 开始",
+          "html": "<p>临时换任务，用精要主义做选择，先从 MCP 开始 build agent。</p><p>把今天尝试什么、做出了什么、下一步怎么做记录下来。</p><figure><img src=\"/media/diary-day4.webp\" width=\"900\" height=\"1200\" loading=\"lazy\" alt=\"生财日记 Day 4 封面：用精要主义做选择\" /><figcaption>生财日记 Day 4 · 2026.10.22</figcaption></figure>",
+          "topics": [
+            "选择战略",
+            "赚钱能力"
+          ],
+          "segmentIds": [
+            "47f5daab672d0fdde38e999f9a1eedb19fb3fd759cce46e4c9e288cbcafb8ff7"
+          ],
+          "updatedAt": "2026-10-24T16:51:18.841Z",
+          "origin": "website",
           "originalHeading": false
         }
       ]

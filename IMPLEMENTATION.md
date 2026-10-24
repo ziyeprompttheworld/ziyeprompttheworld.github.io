@@ -50,7 +50,7 @@ First deployment: GitHub Actions run 40113613144 succeeded (build + deploy), Pag
 
 The user's later instruction explicitly authorizes all past annual originals and pictures. This supersedes the first-release curated-only boundary above. All 15 source documents were fetched in full; raw API envelopes and media resource manifests remain ignored in `.private/`. Public text preserves the source headings, paragraphs, quotations and tables, and adds source links. Each calendar year remains one article.
 
-- 15 annual views, 2012–2026; 1,084 directory nodes. The source provides no independently dated 2014 entry, so that view explains the merged source and links to existing records rather than inventing a diary.
+- 15 annual views, 2012–2026; 1,084 original directory nodes plus two previously published website records. The source provides no independently dated 2014 entry, so that view explains the merged source and links to existing records rather than inventing a diary.
 - 2,681 source images + 8 whiteboards materialized as 2,689 WebP display files, zero download failures, 528.6 MiB. Cross-year views repeat eight image appearances without duplicating asset files.
 - Original videos total about 5.6 GB and exceed the chosen hosting capacity; video, PDF and other attachment names link to their Feishu originals with the actual permission boundary stated. Text and display images are served within this website.
 - Source long-paragraph audit: 2,355 paragraphs examined, 2,350 exact normalized matches. The remaining five retain their text with inserted inline source-reference titles/links; no claim of byte-identical HTML or a screenshot privacy audit.
