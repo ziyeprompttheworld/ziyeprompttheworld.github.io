@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import diaryData from '@/data/diary-2026.json';
+import imported from '@/data/imports.json';
+
+export const site = { name: 'Ziye', title: 'Ziye · 选择、实践与价值', description: '记录我的选择、商业实践，以及创造的价值。', url: 'https://ziyeprompttheworld.github.io', github: 'https://github.com/ziyeprompttheworld' };
+export const themes = ['赚钱能力', '选择战略', '价值影响力'];
+export type Entry = { id: string; date: string; title: string; html: string; topics: string[] };
+export type Diary = { year: number; updated: string; notice: string; stages: { id: string; title: string; entries: Entry[] }[] };
+export type Item = { slug: string; title: string; excerpt: string; date: string; type: string; source: string; topics: string[]; cover: string; minutes?: number; html?: string; originalUrl?: string; author?: string; ownership?: string; url?: string; series?: string };
+export function getDiary(): Diary {
+  if (process.env.NODE_ENV === 'development' && process.env.LOCAL_DIARY_PREVIEW === '1') {
+    const file = path.join(process.cwd(), '.private/diary-2026.json');
+    if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, 'utf8'));
+  }
+  return diaryData;
+}
+export const items: Item[] = [
+  { slug:'diary-2026',title:'2026 年日记',excerpt:'把一年的选择、尝试与思考，放在同一篇持续更新的日记里。从学习到实践，记录事情是怎样发生的。',date:diaryData.updated,type:'年度日记',source:'日记',topics:themes,cover:'/media/year.svg' },
+  { slug:'three-things',title:'我在乎的三件事：赚钱能力、选择战略、价值影响力',excerpt:'用这三个问题整理自己的记录：如何创造回报，如何做出选择，以及能给别人带来什么价值。',date:'2026-10-25',type:'思考',source:'本站',topics:themes,cover:'/media/strategy.svg',minutes:2,html:'<p>我比较在乎三件事：赚钱能力、选择战略、价值影响力。</p><h2>赚钱能力</h2><p>在实践中发现需求，做出东西，学习怎样交付和获得回报。把真实的行动、结果和复盘留下来。</p><h2>选择战略</h2><p>记录为什么做这个选择，当时看到了什么，又准备怎样验证。重要的判断值得在后来重新看一遍。</p><h2>价值影响力</h2><p>分享自己做过的、正在学习的东西，让作品、方法和真实反馈逐渐连接起来。</p><blockquote>记录我的选择、商业实践，以及创造的价值。</blockquote>' },
+  { slug:'essentialism-day4',title:'用精要主义做选择，先从 MCP 开始',excerpt:'生财日记 Day 4。记录这次临时调整任务，以及从 MCP 开始 build agent 的实践。',date:'2026-10-22',type:'视频日记',source:'生财日记',topics:['赚钱能力','选择战略'],cover:'/media/diary-day4.webp',series:'生财日记 · Day 4',html:'<p>这期记录的主题是：临时换任务，用精要主义做选择，先从 MCP 开始 build agent。</p><p>每期讲清楚今天尝试什么、做出了什么、下一步怎么做。</p><figure><img src="/media/diary-day4.webp" alt="生财日记 Day 4 封面" width="900" height="1200"/><figcaption>2026 年 10 月 22 日 · 生财日记 Day 4</figcaption></figure><p>视频完整公开链接将在发布后补充。这里先保留封面与主题记录。</p><p><a href="/content/diary-2026/#d-2026-10-22">阅读这一天的文字记录 →</a></p>' },
+  { slug:'learning-french',title:'从零学法语，也试着做一个学习工具',excerpt:'TRC 视频日记的开始：用 AI 辅助学习法语，探索朗读、谐音与场景记忆。',date:'2026-10-12',type:'视频日记',source:'TRC 日记',topics:['价值影响力'],cover:'/media/learning.svg',series:'TRC · Day 2',html:'<p>TRC 视频日记记录学习成长。第一期尝试用 AI 辅助从零学习法语，制作学习工具；第二期继续探索朗读与谐音场景记忆。</p><p>我希望记录今天尝试什么、做出了什么、下一步怎么做，保留真实学习过程。</p><p>TRC 与生财日记分别计数，保留各自的系列记录。</p>' },
+  { slug:'drawbook-practice',title:'把一次真实使用，讲成一条创作素材',excerpt:'Ancher 素材实践：从脚本、逐页插画到可翻页成品，记录制作过程与表达方法。',date:'2026-10-20',type:'实践',source:'创作记录',topics:['赚钱能力','价值影响力'],cover:'/media/project.svg',html:'<p>这次的素材来自真实使用：在网页侧栏里提出绘本需求，观察脚本、逐页插画和可翻页成品的生成过程。</p><h2>把过程讲清楚</h2><p>画面里有什么，文案就说什么。讲脚本时呈现脚本，讲成品时展示成品。</p><h2>把学习留下来</h2><p>制作经历了多次封面和表达方式调整。保留每次的做法与反馈，作为下一次实践的参考。</p><p>项目仍在迭代中；这里不对收入、转化或制作效果作未经验证的承诺。</p>' },
+  ...(imported as Item[]),
+];
+export const projects = [
+  {id:'personal-site',title:'个人网站与年度日记',en:'PERSONAL ARCHIVE',description:'把日记、作品、项目和研究连接起来，让一次记录可以持续积累。',status:'制作中',theme:'价值影响力',cover:'/media/year.svg',href:'/content/diary-2026/',next:'完成整站内容与年度记录的整理。',since:'2026.10'},
+  {id:'creative-practice',title:'AI 创作与素材实践',en:'CREATIVE PRACTICE',description:'从真实使用出发，练习视频、封面、文案与可复用的表达。',status:'实践中',theme:'赚钱能力',cover:'/media/project.svg',href:'/content/drawbook-practice/',next:'用实际作品和反馈验证表达方式。',since:'2026.10'},
+  {id:'atlas',title:'Atlas · 创意研究',en:'RESEARCH ATLAS',description:'整理广告创意原型与案例，给每一次创作和选择提供依据。',status:'持续研究',theme:'选择战略',cover:'/media/research.svg',href:'/research/',next:'把研究转为自己的判断与实践。',since:'2026.10'},
+];
+export function dateLabel(date: string) { const [y,m,d]=date.split('-'); return `${y}年${Number(m)}月${Number(d)}日`; }

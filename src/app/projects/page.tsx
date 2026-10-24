@@ -1,0 +1,6 @@
+import Link from 'next/link';
+import {ArrowUpRight} from 'lucide-react';
+import {Page,PageHead,Topic} from '@/components/UI';
+import {projects} from '@/lib/content';
+export const metadata={title:'商业实践'};
+export default function Projects(){return <Page><PageHead title="商业实践" description="从真实问题出发，把选择变成行动，把行动变成可验证的结果。"/><div className="section-label">BUILD → DELIVER → LEARN</div><h2 className="subsection-title">正在发生的事</h2><div className="stage-board">{['制作中','实践中','持续研究'].map(status=><section className="board-column" key={status}><h3>{status}<span>{projects.filter(p=>p.status===status).length}</span></h3>{projects.filter(p=>p.status===status).map(p=><Link key={p.id} className="board-item" href={p.href}>{p.title}<small>{p.theme}</small></Link>)}</section>)}</div><div className="project-grid">{projects.map(p=><article className="project-card" key={p.id}><img src={p.cover} alt=""/><div><small className="eyebrow">{p.en} · SINCE {p.since}</small><h2>{p.title}</h2><Topic>{p.status}</Topic><p>{p.description}</p><Link href={p.href} className="button">查看实践 <ArrowUpRight size={13}/></Link><div className="project-next"><strong>下一步</strong><br/>{p.next}</div></div></article>)}</div><div className="data-note">每个项目都留下问题、选择、交付与下一步。商业结果以实际验证为准；尚未取得的数据不作展示。</div></Page>;}

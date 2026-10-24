@@ -1,0 +1,28 @@
+{
+  "name": "ziye-personal-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3100",
+    "build": "next build --webpack && node scripts/export-feeds.mjs",
+    "start": "python3 -m http.server 3100 --bind 127.0.0.1 --directory out",
+    "diary": "node scripts/diary.mjs",
+    "import:link": "node scripts/import-link.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "marked": "^15.0.12",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sanitize-html": "^2.18.1",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.3"
+  }
+}
