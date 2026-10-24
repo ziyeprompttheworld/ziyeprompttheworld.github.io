@@ -1,0 +1,24 @@
+{
+  "year": 2014,
+  "updated": "2026-10-25",
+  "updatedAt": "2026-10-24T17:24:02.877405+00:00",
+  "lastRecordDate": "",
+  "original": true,
+  "notice": "现有飞书合并文档没有可明确归属到本年的独立条目。相关原文保留在已有明确日期的年度中，不补写不存在的经历。",
+  "sources": [],
+  "stages": [
+    {
+      "id": "original-index",
+      "title": "原文归档说明",
+      "entries": [
+        {
+          "id": "original-note",
+          "date": "",
+          "title": "合并文档中的历史记录",
+          "html": "<p>2012—2016 年的厦大日记原文保留在合并来源中。当前可确认的日期范围是 2012 年 9 月—2013 年 1 月，以及 2016 年 7 月的毕业材料。</p><p><a href=\"/content/diary-2012/\">阅读 2012 年原文</a> · <a href=\"/content/diary-2013/\">阅读跨年原文</a> · <a href=\"/content/diary-2016/\">阅读 2016 年原文</a></p>",
+          "topics": []
+        }
+      ]
+    }
+  ]
+}

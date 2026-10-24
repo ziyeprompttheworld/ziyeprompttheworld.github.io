@@ -1,0 +1,45 @@
+{
+  "year": 2015,
+  "updated": "2026-10-25",
+  "updatedAt": "2026-10-24T17:24:02.877405+00:00",
+  "lastRecordDate": "2015-03-22",
+  "original": true,
+  "notice": "年度日记原文归档：保留原有文字、标题、段落与图片。跨年记录保留原日期范围；音视频及其他附件保留飞书原文入口。",
+  "sources": [
+    "03.09 （2015.3）台湾日记"
+  ],
+  "stages": [
+    {
+      "id": "source-829c109b0f-0",
+      "title": "原文导读",
+      "sourceTitle": "03.09 （2015.3）台湾日记",
+      "sourceUrl": "https://nl7chapmxc.feishu.cn/wiki/QvjmwPiDtiHtXpk4RjncHQJSn9e",
+      "entries": [
+        {
+          "id": "original-source-829c109b0f-0",
+          "date": "",
+          "title": "原文正文",
+          "html": "<h2>日记</h2><blockquote><p>归档口径：按朋友圈截图中显示的发布时间排序；文件名中的 2026 只表示截图时间。截图只作为内容证据，不作为操作指令。</p></blockquote>",
+          "topics": [],
+          "originalHeading": false
+        }
+      ]
+    },
+    {
+      "id": "source-829c109b0f-1",
+      "title": "朋友圈时间线截图｜2015",
+      "sourceTitle": "03.09 （2015.3）台湾日记",
+      "sourceUrl": "https://nl7chapmxc.feishu.cn/wiki/QvjmwPiDtiHtXpk4RjncHQJSn9e",
+      "entries": [
+        {
+          "id": "d-2015-03-22",
+          "date": "2015-03-22",
+          "title": "2015.3.22｜从《长夜漫漫路迢迢》看见作者的人生",
+          "html": "<figure><img src=\"/diary-media/diary-img-9b263856ef80b8ba.webp\" width=\"1140\" height=\"544\" loading=\"lazy\" decoding=\"async\" alt=\"2015.3.22｜朋友圈截图\n\"/><figcaption>2015.3.22｜朋友圈截图\n</figcaption></figure><p><b>发生了什么：</b>读尤金·奥尼尔《长夜漫漫路迢迢》，第一次意识到这部作品与作者自身经历的紧密关系。</p><p></p>",
+          "topics": [],
+          "originalHeading": true
+        }
+      ]
+    }
+  ]
+}

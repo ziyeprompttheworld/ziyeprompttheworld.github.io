@@ -1,0 +1,141 @@
+[
+  {
+    "year": 2012,
+    "entries": 8,
+    "images": 7,
+    "sources": [
+      "03.07 （2012.9~2016.7）厦大日记"
+    ],
+    "lastRecordDate": ""
+  },
+  {
+    "year": 2013,
+    "entries": 7,
+    "images": 7,
+    "sources": [
+      "03.07 （2012.9~2016.7）厦大日记"
+    ],
+    "lastRecordDate": ""
+  },
+  {
+    "year": 2014,
+    "entries": 1,
+    "images": 0,
+    "sources": [],
+    "lastRecordDate": ""
+  },
+  {
+    "year": 2015,
+    "entries": 2,
+    "images": 1,
+    "sources": [
+      "03.09 （2015.3）台湾日记"
+    ],
+    "lastRecordDate": "2015-03-22"
+  },
+  {
+    "year": 2016,
+    "entries": 1,
+    "images": 1,
+    "sources": [
+      "03.07 （2012.9~2016.7）厦大日记"
+    ],
+    "lastRecordDate": ""
+  },
+  {
+    "year": 2017,
+    "entries": 72,
+    "images": 2,
+    "sources": [
+      "03.10 （2017.1~2017.12）英音日记"
+    ],
+    "lastRecordDate": "2017-12-31"
+  },
+  {
+    "year": 2018,
+    "entries": 123,
+    "images": 9,
+    "sources": [
+      "03.12 （2018.1~2018.11）bp日记"
+    ],
+    "lastRecordDate": "2018-12-15"
+  },
+  {
+    "year": 2019,
+    "entries": 24,
+    "images": 22,
+    "sources": [
+      "03.13 （2019.1~2019.12）东京日记"
+    ],
+    "lastRecordDate": "2019-12-29"
+  },
+  {
+    "year": 2020,
+    "entries": 13,
+    "images": 12,
+    "sources": [
+      "03.11 （2020.1~2020.9）东京日记"
+    ],
+    "lastRecordDate": "2020-09-11"
+  },
+  {
+    "year": 2021,
+    "entries": 34,
+    "images": 33,
+    "sources": [
+      "03.06 （2022.2~2022.12）底层逻辑日记",
+      "03.14 （2021.2~2021.12）编辑日记"
+    ],
+    "lastRecordDate": "2021-12-24"
+  },
+  {
+    "year": 2022,
+    "entries": 62,
+    "images": 45,
+    "sources": [
+      "03.05 （2023.1~2023.12）磨铁日记",
+      "03.06 （2022.2~2022.12）底层逻辑日记"
+    ],
+    "lastRecordDate": "2022-12-09"
+  },
+  {
+    "year": 2023,
+    "entries": 75,
+    "images": 73,
+    "sources": [
+      "03.05 （2023.1~2023.12）磨铁日记"
+    ],
+    "lastRecordDate": "2023-10-10"
+  },
+  {
+    "year": 2024,
+    "entries": 74,
+    "images": 408,
+    "sources": [
+      "03.04 （2024.1~2024.12）字节日记"
+    ],
+    "lastRecordDate": "2024-12-17"
+  },
+  {
+    "year": 2025,
+    "entries": 366,
+    "images": 1011,
+    "sources": [
+      "03.01 （2026.1~2026.12）机器人日记",
+      "03.02 （2025.1~2025.12）tiktok日记",
+      "03.08 （2025.7.13～2025.12.31）32岁 AI 产品日记"
+    ],
+    "lastRecordDate": "2025-12-31"
+  },
+  {
+    "year": 2026,
+    "entries": 222,
+    "images": 1066,
+    "sources": [
+      "03.01 （2026.1~2026.12）机器人日记",
+      "03.03 （2026.10.11～2027.10.11）TRC日记",
+      "03.15 （2026.1.3～） 西风日记"
+    ],
+    "lastRecordDate": "2026-10-19"
+  }
+]

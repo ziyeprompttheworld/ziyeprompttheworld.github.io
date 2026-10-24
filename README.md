@@ -14,12 +14,13 @@ npm run dev
 ## 内容
 
 - `src/lib/content.ts`：本站公开内容元数据、项目和网站配置。
-- `src/data/diary-2026.json`：整理后的年度公开稿，每天一个稳定节点。
+- `src/data/diaries/YYYY.json`：飞书历史日记原文，按年归档，保留原文段落、标题、图片与来源分组。
+- `src/data/diary-index.json`：年度注册与目录统计；跨年原文保留日期范围，不编造缺失年份。
 - `src/data/imports.json`：公开导入条目；保留来源及归属。
 - `src/data/updates.json`：实际更新事件；补写旧日期时，首页与 RSS 链接到被更新的日期。
 - `src/data/research.json`：Atlas 的 71 个研究原型，参考案例链接到来源。
 - `public/media/`：公开采用的显示图片；原图和私人素材不放这里。
-- `.private/`：本地原始输入、导入快照和完整日记预览，Git 忽略。生产构建始终只使用公开稿。
+- `.private/`：本地原始输入、API 响应、素材令牌与原文件，Git 忽略。用户已明确授权将全部历史日记原文与图片发布到网站；公开数据由这些来源转换而来，不包含 API 响应或鉴权令牌。
 
 ## 日记命令
 
@@ -30,7 +31,19 @@ npm run diary -- --date 2026-10-25 --title 当日主题 --file prepared.md
 npm run diary -- --date 2026-10-25 --title 当日主题 --file prepared.md --topics 选择战略,赚钱能力 --publish --replace
 ```
 
-Markdown 文件应由本人或 Codex 先整理为公开稿。命令不负责判断个人隐私、核实引用归属或替代编辑。当前命令只登记 2026；迁移其他年份时需要扩展路由注册。
+Markdown 文件应由本人或 Codex 按本人的实际表达准备。命令支持历年和新年度，自动维护年度注册。历史导入的原文默认保留；向同一历史日期补充时在“网站新增记录”中建立补充节点，不覆盖来源原文。如需修改历史原文，应先按用户指令修改飞书来源，再重新导入；生成的年度 JSON 不作为原文编辑入口。
+
+## 历史原文刷新
+
+```sh
+# 默认从本机快照继续；--refresh 重新读取已登记来源
+python3 scripts/fetch-lark-archive.py --refresh
+python3 scripts/fetch-diary-media.py
+python3 scripts/build-diary-archive.py
+npm run build
+```
+
+新增来源时先用 lark-cli 更新 `.private/archive/nodes.json` 的日记根目录清单；抓取失败应停止，不能用旧快照冒充刷新成功。网站新增记录独立保存，重建原文时保留已有记录及锚点。
 
 ## 链接导入
 
@@ -47,8 +60,10 @@ npm run import:link -- https://example.com/reference --ownership research --auth
 
 ## 当前版本的真实边界
 
-公开年度日记是已整理的节选，完整原始年度图文只用于本机预览。视频目前只有主题与封面，尚未接入公开播放地址。订阅使用 RSS，邮件订阅和群发尚未开放。没有虚构访问量、收入或客户数据，也没有 AI 讲解服务。展馆可实际走动、传送、检索和打开作品。
+历史日记来源为用户指定飞书日记根目录中的全部 15 份文档。2012—2026 年均有年度入口，2014 年因源合并文档缺少可独立识别条目，明确展示归档说明。全部 2,681 张正文图片及 8 张画板已下载为显示资源，原文附带约 5.6GB 视频，另有 PDF 等附件，保留飞书原文入口，需要相应访问权限。
 
-完整日记开发预览需要本地 `.private/diary-2026.json` 与私人图片服务，并显式设置 `LOCAL_DIARY_PREVIEW=1`；此模式仅在 development 生效。不要把私人图片目录放进 public 或公开预览服务。
+所有年度正文和显示图片都在网站内提供。压缩显示图片约 529MiB，保留原图比例；原文件不加入 Git。历史原文保留引用与原有用语，不改写为摘要。日常新增输入的私有指令仍优先。
+
+单独的视频日记页面目前有真实封面与主题，尚未取得公开播放地址。邮件订阅和群发、访问统计与 AI 讲解未接入，订阅使用 RSS；不生成虚假数据。
 
 自然语言规则存于用户本地 `ziye-diary` skill，并在项目入口登记；没有后台消息监听。
