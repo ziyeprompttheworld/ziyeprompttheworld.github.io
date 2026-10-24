@@ -4,7 +4,7 @@ import sanitize from 'sanitize-html';
 import {marked} from 'marked';
 export const root=path.resolve(import.meta.dirname,'..');
 export const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-export function markdown(text){return sanitize(marked.parse(text,{async:false}),{allowedTags:['p','br','h2','h3','h4','strong','em','ul','ol','li','blockquote','pre','code','a','figure','figcaption','img','hr'],allowedAttributes:{a:['href','title','target','rel'],img:['src','alt','width','height','loading']},allowedSchemes:['https','http','mailto'],allowProtocolRelative:false,transformTags:{a:(_tag,attrs)=>({tagName:'a',attribs:{...attrs,target:'_blank',rel:'noopener noreferrer'}})}});}
+export function markdown(text){return sanitize(marked.parse(text,{async:false}),{allowedTags:['p','br','h2','h3','h4','strong','em','ul','ol','li','blockquote','pre','code','a','figure','figcaption','img','hr','table','thead','tbody','tr','th','td'],allowedAttributes:{a:['href','title','target','rel'],img:['src','alt','width','height','loading']},allowedSchemes:['https','http','mailto'],allowProtocolRelative:false,transformTags:{a:(_tag,attrs)=>({tagName:'a',attribs:{...attrs,target:'_blank',rel:'noopener noreferrer'}})}});}
 export function atomicJson(file,value){fs.mkdirSync(path.dirname(file),{recursive:true});const tmp=file+'.tmp';fs.writeFileSync(tmp,JSON.stringify(value,null,2)+'\n',{mode:0o600});fs.renameSync(tmp,file);}
 export function canonical(raw){
  const u=new URL(raw);
