@@ -16,6 +16,7 @@ npm run dev
 - `src/lib/content.ts`：本站公开内容元数据、项目和网站配置。
 - `src/data/diary-2026.json`：整理后的年度公开稿，每天一个稳定节点。
 - `src/data/imports.json`：公开导入条目；保留来源及归属。
+- `src/data/updates.json`：实际更新事件；补写旧日期时，首页与 RSS 链接到被更新的日期。
 - `src/data/research.json`：Atlas 的 71 个研究原型，参考案例链接到来源。
 - `public/media/`：公开采用的显示图片；原图和私人素材不放这里。
 - `.private/`：本地原始输入、导入快照和完整日记预览，Git 忽略。生产构建始终只使用公开稿。

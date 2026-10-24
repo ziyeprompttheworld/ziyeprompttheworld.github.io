@@ -33,3 +33,13 @@ Private content publication; stable date anchors and same-day aggregation; query
 
 2026-10-25: plan saved. Native implementation selected to continue user-authorized work without another approval loop.
 2026-10-25: first production build succeeded (25 routes before RSS/import additions). Real external reference imported as a research card. Local raw annual view merges same-day entries into 207 dated/undated nodes, with 1,034 images after excluding the 2025 entry. Public release uses six edited date sections and public media only. Service gaps and historical migration are explicitly documented in README.
+
+## Review and release evidence
+
+2026-10-25: fresh read-only review of f193dc6 completed. No current private-source publication path found. Fixed replacement/idempotency by persisting public segment identities and comparing current replacement state; historical corrections now record actual update events and link to stable dates from homepage/RSS. Date-of-record remains separate from update time.
+
+Review regrading: Escape/search and stuck movement affect basic museum control; source ownership labels and featured counts affect truthful presentation; the Shanghai import date affects the explicit timezone rule. Treated these as release-relevant and fixed them in the same pass, along with the two Important diary findings. No deferred review findings. No tests added/run per developer constraint; final production build passed (27 static routes including aliases and data endpoints; 17 sitemap pages; 6 public content items).
+
+Parent inspected desktop home/list, 390px archive and diary navigation, actual picture layout, and rendered WebGL ticket/map. Reference homepage uses a narrower 672px outer container than content/reading pages. Private marker and local image host strings were absent from generated output when searched; private source remains ignored by Git.
+
+Rulings: raw historical material remains local-only until edited; public video pages show actual covers/topics with playback pending; email/AI/traffic services remain explicitly unavailable. These are documented first-release boundaries, not represented as completed integrations. Original reference route families map to personalized replacement pages. Historical factual provenance was checked only against supplied source records and series metadata; no claim of a full historical audit.

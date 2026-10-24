@@ -2,12 +2,17 @@ import fs from 'node:fs';
 import path from 'node:path';
 import diaryData from '@/data/diary-2026.json';
 import imported from '@/data/imports.json';
+import updateData from '@/data/updates.json';
 
 export const site = { name: 'Ziye', title: 'Ziye · 选择、实践与价值', description: '记录我的选择、商业实践，以及创造的价值。', url: 'https://ziyeprompttheworld.github.io', github: 'https://github.com/ziyeprompttheworld' };
 export const themes = ['赚钱能力', '选择战略', '价值影响力'];
 export type Entry = { id: string; date: string; title: string; html: string; topics: string[] };
-export type Diary = { year: number; updated: string; notice: string; stages: { id: string; title: string; entries: Entry[] }[] };
-export type Item = { slug: string; title: string; excerpt: string; date: string; type: string; source: string; topics: string[]; cover: string; minutes?: number; html?: string; originalUrl?: string; author?: string; ownership?: string; url?: string; series?: string };
+export type Diary = { year: number; updated: string; lastRecordDate?:string; updatedAt?:string; notice: string; stages: { id: string; title: string; entries: Entry[] }[] };
+export type Item = { slug: string; title: string; excerpt: string; date: string; updatedAt?:string; importedAt?:string; originalDate?:string|null; type: string; source: string; topics: string[]; cover: string; minutes?: number; html?: string; originalUrl?: string; author?: string; originalAuthor?:string|null; ownership?: string; url?: string; series?: string };
+type Update={contentSlug:string;entryId:string;entryDate:string;title:string;updatedAt:string};
+export const updates=updateData as Update[];
+export function activity(item:Item){const event=updates.filter(u=>u.contentSlug===item.slug).sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt))[0];const rawTime=event?.updatedAt||item.updatedAt||item.importedAt||item.date;const date=rawTime.length===10?rawTime:new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(rawTime));const time=rawTime.length===10?rawTime+'T00:00:00+08:00':rawTime;return{time,date,href:'/content/'+item.slug+'/'+(event?'#'+event.entryId:''),title:event?item.title+' · '+event.title:item.title};}
+export function recentItems(){return [...items].sort((a,b)=>Date.parse(activity(b).time)-Date.parse(activity(a).time));}
 export function getDiary(): Diary {
   if (process.env.NODE_ENV === 'development' && process.env.LOCAL_DIARY_PREVIEW === '1') {
     const file = path.join(process.cwd(), '.private/diary-2026.json');
