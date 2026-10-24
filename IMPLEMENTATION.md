@@ -27,7 +27,7 @@ Private content publication; stable date anchors and same-day aggregation; query
 - [x] 3. Full site modules: /projects/, /progress/, /strategy/, /research/, /tools/, /requests/, /newsletter/ and detail; aliases map reference routes to replacements.
 - [x] 4. Museum: dynamic Three.js scene, ticket, movement, map, search, readable exhibit overlay; no invented online count or AI API.
 - [x] 5. Workflows: link importer, append-by-date diary command, RSS/sitemap, GitHub Actions, usage rules. Preserve author/source/date and dedup imports.
-- [ ] 6. Build, inspect representative UI, independent code review, fix material findings, publish only public assets and save deployment result.
+- [x] 6. Build, inspect representative UI, independent code review, fix material findings, publish only public assets and save deployment result.
 
 ## Progress
 
@@ -43,3 +43,5 @@ Review regrading: Escape/search and stuck movement affect basic museum control; 
 Parent inspected desktop home/list, 390px archive and diary navigation, actual picture layout, and rendered WebGL ticket/map. Reference homepage uses a narrower 672px outer container than content/reading pages. Private marker and local image host strings were absent from generated output when searched; private source remains ignored by Git.
 
 Rulings: raw historical material remains local-only until edited; public video pages show actual covers/topics with playback pending; email/AI/traffic services remain explicitly unavailable. These are documented first-release boundaries, not represented as completed integrations. Original reference route families map to personalized replacement pages. Historical factual provenance was checked only against supplied source records and series metadata; no claim of a full historical audit.
+
+First deployment: GitHub Actions run 40113613144 succeeded (build + deploy), Pages build_type=workflow, https://ziyeprompttheworld.github.io/ . Parent opened live home and annual article. Public annual HTML has six edited date nodes and one selected image; complete raw data is not in the deployed site. Final UI adjustment opens the first directory stage immediately.
